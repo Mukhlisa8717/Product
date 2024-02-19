@@ -1,0 +1,76 @@
+@use '../../scss/variables' as *;
+@use '../../scss/style.scss';
+
+.header {
+    width: 100%;
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 25px 0;
+        &-logo{
+            display: flex;
+            gap: 10px;
+            .logo__title{
+                color: $logo-color;
+                font-weight: 700;
+            }
+        }
+        &-menu{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            ul{
+                display: flex;
+                list-style: none;
+                gap: 20px;
+                li a{
+                    color: $text-color;
+                    font-size: 16px;
+                    text-decoration: none;
+                }
+                li a:hover{
+                    font-weight: 600;
+                }
+            }
+            .signIn-btn{
+                width: 102px;
+                padding: 12px 0;
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-size: 16px;
+                background: none;
+                color: $logo-color;
+                border: 1px solid $btn-color-light;
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover{
+                    background: $btn-color-dark;
+                    color: white;
+                }
+            }
+            .signUp-btn{
+                width: 110px;
+                padding: 12px 0;
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-size: 16px;
+                background: $btn-color-dark;
+                color: white;
+                border: 1px solid $btn-color-light;
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover{
+                    background: none;
+                    color: $logo-color;
+                }
+            }
+            .mode-btn{
+                border: none;
+                background: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

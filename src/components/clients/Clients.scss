@@ -1,0 +1,66 @@
+@use '../../scss/variables' as *;
+@use '../../scss/style.scss';
+
+.clients{
+    width: 100%;
+    margin: 70px 0;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        h1{
+            font-weight: 700;
+            font-size: 34px;
+            color: $text-color;
+        }
+        h5{
+            font-weight: 500;
+            font-size: 16px;
+            color: $text-color;
+            text-align: center;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            gap: 60px;
+            margin-top: 40px;
+            li{
+                display: flex;
+                flex-direction: column;
+                border: 1px solid $btn-color-light;
+                border-radius: 5px;
+                padding: 30px;
+                gap: 20px;
+                img{
+                    width: 106px;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: $second-text-color;
+                }
+                .clients__userInf{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    img{
+                        width: 50px;
+                        height: 50px;
+                    }
+                    div h5{
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: $btn-color-dark;
+                    }
+                    div h6{
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+@use '../../scss/variables' as *;
+@use '../../scss/style.scss';
+
+.hero{
+    width: 100%;
+    &__container{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    &__leftSide{
+        display: flex;
+        flex-direction: column;
+        width: 42%;
+        gap: 45px;
+        &-text{
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            h1{
+                font-weight: 700;
+                font-size: 40px;
+                color: $text-color;
+            }
+            p{
+                font-weight: 400;
+                font-size: 18px;
+                color: $text-color;
+            }
+        }
+        &-button{
+            display: flex;
+            gap: 20px;
+            .start-btn{
+                width: 178px;
+                font-family: "Poppins", sans-serif;
+                background: $btn-color-dark;
+                font-weight: 700;
+                color: white;
+                font-size: 16px;
+                padding: 14px 0;
+                border-radius: 5px;
+                border: 1px solid $btn-color-light;
+                cursor: pointer;
+                &:hover{
+                    background: none;
+                    color: $logo-color;
+                }
+            }
+            .watch-btn{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-size: 16px;
+                text-decoration: underline;
+                color: $btn-color-dark;
+                border: none;
+                background: none;
+                cursor: pointer;
+            }
+        }
+    }
+    &__rightSide{
+        width: 58%;
+        img{
+            width: 100%;
+        }
+    }
+}

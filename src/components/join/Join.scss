@@ -1,0 +1,41 @@
+@use '../../scss/variables' as *;
+@use '../../scss/style.scss';
+
+.join{
+    width: 100%;
+    margin: 40px 0;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: $btn-color-dark;
+        border-radius: 32px;
+        padding: 10px 50px;
+        gap: 150px;
+        .join__leftSide{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            h1{
+                font-weight: 600;
+                font-size: 32px;
+                color: white;
+            }
+            &-btn{
+                width: 150px;
+                font-weight: 600;
+                font-size: 20px;
+                color: $btn-color-dark;
+                padding: 10px 0;
+                border-radius: 8px;
+                border: none;
+                cursor: pointer;
+                &:hover{
+                    color: white;
+                    background-color: $btn-color-dark;
+                    border: 1px solid $btn-color-light;
+                }
+            }
+        }
+    }
+}
